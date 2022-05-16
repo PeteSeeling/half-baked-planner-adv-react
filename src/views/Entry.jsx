@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { useEntries } from '../context/PlannerContext';
-
 import styles from './Entry.css';
 
 export default function Entry() {
