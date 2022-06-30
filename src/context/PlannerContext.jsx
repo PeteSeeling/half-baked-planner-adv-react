@@ -20,7 +20,6 @@ function entriesReducer(entries, { type, payload }) {
       throw Error(`Unknown action: ${type}`);
   }
 }
-
 export const PlannerContext = createContext();
 
 const PlannerProvider = ({ children }) => {
@@ -74,8 +73,6 @@ const useEntries = () => {
   if (context === undefined) {
     throw new Error('useEntries must be used within a PlannerProvider');
   }
-
   return context;
 };
-
 export { PlannerProvider, useEntries };
